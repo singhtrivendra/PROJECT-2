@@ -1,0 +1,412 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+/* #navbar{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    position: sticky;
+    top: 0px;
+} */
+/*Navigation Bar: Logo and image  */
+#logo{
+margin: 34px 45px;
+}
+#logo img{
+    padding: 0px 0px;
+    height: 56px;
+margin: 4px 5px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 0px;
+    top: 0px;
+    position: sticky;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    
+    display: flex;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-style:oblique;
+    font-weight: 100;
+}
+#navbar ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 20px 10px;
+}
+#navbar::before{
+   content: ""; 
+   background-color: black;
+   position: absolute;
+   height: 50%;
+   width: 100%;
+   
+   z-index: -1;
+   opacity: .3;
+   
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px; 
+    text-decoration: none;
+}
+#navbar input{
+    border: 2px solid rgb(9, 5, 5);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 2px 3px;
+    display: inline;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+   
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('../img/bg9.jpg') no-repeat center center/cover;
+  height: 98%;
+  top: 0px;
+  left: 0px ;
+  width: 100%;
+  z-index: -1;
+  opacity: .9;
+  /* background-color: rgb(234, 255, 0); */
+
+}
+#home h1{
+    color: rgb(152, 32, 70);
+    text-align: center;
+    font-size: 3.5rem; ;
+}
+#home p{
+    color: rgb(237, 230, 230);
+    text-align: center;
+    font-size :1.5rem; ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* services section  */
+#services{
+    margin: 34px 2px;
+    display: flex;
+    
+}
+#services .box{
+    height: 350px;
+    width: 450px;
+    /* border: 2px solid brown; */
+    margin: 5px 10px;
+    padding:34px;
+    border-radius: 23px;
+    background-color: rgb(219, 219, 229);
+
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+   padding: 2px 2px;
+   border-radius: 15px;
+}
+ .services .box p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+.services-container h1{
+    font-style:var(--navbar-height);
+    color: rgb(142, 95, 178);
+    text-align: center;
+    font-size: 54px; ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.services-container h2{
+    font-style:var(--navbar-height);
+    color: rgb(211, 97, 97);
+    text-align: center;
+    font-size: 24px; ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#services::before{
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+}
+
+ /* clients Section  */
+ #clients{
+    /* height: 0px; */
+    padding: 0px 2px;
+    margin: 34px;
+    display: flex;
+}
+#clients .item{
+    height: 450px;
+    width: 550px;
+    /* border: 2px solid brown; */
+    margin: 5px 10px;
+    padding:34px;
+    border-radius: 23px;
+    background-color: rgb(224, 211, 220);
+
+
+}
+#clients .item img{
+    height: 160px;
+    margin: auto;
+    display: block;
+   padding: 2px 2px;
+   border-radius: 15px;
+}
+ .clients .item p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ /* clients section 2 */
+ #clients1{
+    margin: 34px;
+    display: flex;
+}
+#clients1 .item{
+    height: 450px;
+    width: 300px;
+    /* border: 2px solid brown; */
+    margin: 5px 10px;
+    padding:34px;
+    border-radius: 23px;
+    background-color: rgb(224, 211, 220);
+
+
+}
+#clients1 .item img{
+    height: 160px;
+    margin: auto;
+    display: block;
+   padding: 2px 2px;
+   border-radius: 15px;
+}
+ .clients .item p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ #clients::before{
+    content: ""; 
+    position: absolute;
+    width: 100%;
+    height: 190%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg16.webp') no-repeat center center/cover;
+}
+/* contact Section  */
+#contact{
+position: relative;
+}
+#contact::before{
+    content: ""; 
+    position:absolute;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/bg12.jpg') no-repeat center center/cover;
+}
+.contact h2{
+    color: rgb(180, 55, 234);
+    text-align: center;
+    font-size: 1.5rem; ;
+    padding: 34px;
+    /* margin: 100px 100px; */
+}
+.form-group input{
+    font-family: 'Poppins', sans-serif;
+
+background-color: rgb(210, 187, 197);
+    text-align: center;
+    display: block;
+    height: 20px;
+    width: 208px;
+    padding: 1px 1px;
+    /* border: 2px solid black; */
+margin: 4px auto;
+font-size: 25px;
+border-radius:5px ;
+opacity: .6;
+
+}
+
+.container h1{
+    text-align: center;
+}
+.contact .btn3{
+    display: block;
+    height: 30px;
+    width: 8%;
+margin: auto;
+border-radius: 8px;
+background-color: rgb(236, 129, 94);
+border-color: aliceblue;
+}
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 10px;
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 16px 30px;
+    border: 2px solid white;
+    background-color: rgb(207, 108, 69);
+    color:aliceblue;
+    margin: 27px;
+    border-radius: 28px;
+}
+.btn:hover{
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px; 
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.btn1{
+/* display: block; */
+ padding: 8px 8px;
+    border: 2px solid white;
+    background-color: rgb(111, 185, 148);
+    color: rgb(12, 4, 4);
+    margin: 2px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 150px;
+}
+.btn1:hover{
+border: none;
+    cursor: pointer;
+    display: inline;
+    background-color: rgb(228, 231, 232);
+    color: black;
+    padding: 0px 0px;
+    border-radius: 10px; 
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.btn2{
+    /* display: block; */
+     padding: 10px 20px;
+        border: 2px solid white;
+        background-color: rgb(47, 186, 126);
+        color: black;
+        margin: 27px 24px;
+        border-radius: 10px;
+
+    }
+    .btn2:hover{
+        cursor: pointer;
+        display: inline;
+        background-color: white;
+        color: black;
+        padding: 3px 10px;
+        border-radius: 10px; 
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .center{
+        margin: 0px 0px;
+        height: 100px;
+        padding: 10px 10px;
+        font-size: .8rem;
+    text-align:center;
+    }
+    /* footer  */
+
+    /* footer{
+        background-color: black;
+        color: aliceblue;
+        /* padding: 9px 20px; */
+        /* padding-top: 0px 0px;
+        width:100%;
+        height: 100%;
+margin: 124px;    }
+     */
+     
+     .feedback{
+        padding: 23px 30px;
+        margin: 180px 50px;
+        width: 100%;
+     }
+     .feedback h2{
+        color: rgb(180, 55, 234);
+        text-align: center;
+        font-size: 1.5rem; 
+        /* margin: 100px; */
+        
+    }
+    .feedback {
+        margin: 0px;
+        display: inline;
+    }
+    .box1{
+        display: block;
+        padding: 13px 13px;
+        margin: 222px;
+    }
+     footer{
+        
+        /* background-color:yellow ; */
+        /* border: 3px solid black; */
+
+        grid-area: footer;
+         margin: 30px;
+        
+    }
+    footer .center{
+        margin: 10px;
+        height: 10%; 
+    }
